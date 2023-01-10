@@ -1,0 +1,63 @@
+html, body {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
+}
+
+#page-container {
+    height: 100vh;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.projects-grid {
+    margin: 0 30px 30px 30px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: repeat(1, auto);
+}
+
+.projects-grid > .card {
+    margin: 0 auto;
+    height: 100%;
+    transition: transform .2s; /* Animation */
+    border-color: rgb(0, 0, 0, 0.4);
+}
+
+.projects-grid > .card:hover {
+    transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.card-img.top {
+    width: 100%;
+}
+
+a:hover {
+    opacity: .8;
+  }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 100%;
+}
+
+footer > p {
+    text-align: center;
+}
